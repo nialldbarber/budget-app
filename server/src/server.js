@@ -6,6 +6,8 @@ import { importSchema } from 'graphql-import'
 import { resolvers } from '~/schema/resolvers'
 
 const startServer = async () => {
+	require('~/db')
+
 	const app = express()
 	const port = process.env.port || 7000
 
